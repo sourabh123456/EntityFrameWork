@@ -102,7 +102,18 @@ Different ways of accessing lazy loading
    
    public string? EmpName {get;set;}
   
-  }
+  } 
+
+  **How Change Tracking Works in Entity framework ?**
+  DbContext has a component called **ChangeTracker** that track changes made to the entities.
+  The change tracker monitors the state of an entity within the context and assign an entity state to each entity such as **Added,Modified, Deleted, Unchanged**
+  based on the changed made to the entity.
+
+  When you call the Savechanges method EF core examines the tracked entities and generates the necessary sql based on their current states.
+
+  After calling the savechanges method the change tracker sets the entity state to unchanged as changes have been successfully persisted in the database.
+  
+  
   
 
 
