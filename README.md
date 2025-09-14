@@ -26,3 +26,12 @@ Dbset: Domain classes(Models) becomes entities when they are Included as Dbset. 
 For example : Dbset<Employee> Employees {get;set;};
               Dbset<Manager> Managers {get;set;};
 
+**Dbset Allows us to perform CRUD operations on database.**
+
+
+Q  **Entity Framework Migration ?**
+
+Migrations : Migrations is an entity framework feaure that provides a way to incrementally update the database and keep the db in sync with the application model
+while preserving the data in the databse.
+
+
