@@ -34,4 +34,9 @@ Q  **Entity Framework Migration ?**
 Migrations : Migrations is an entity framework feaure that provides a way to incrementally update the database and keep the db in sync with the application model
 while preserving the data in the databse.
 
+**Migration Commands:**
+Add ----> Add-Migration "message"
+Update -----> Update-Migrations "message" . After running this command the database created/update in the database.
+
+
 
