@@ -17,3 +17,7 @@
 **What is DBContext?**
 **DbContext: ** DbContext is a class that is used to interact with Database.
 
+**What are entities?**
+**Entities :** Entities are the real world objects that are stored in form of data.
+In case of Entity framework it is a class that is mapped to database table.
+
