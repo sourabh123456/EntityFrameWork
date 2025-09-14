@@ -89,13 +89,13 @@ Different ways of accessing lazy loading
   **What are Data Anotations ?**
   **Data Anotations:** These are the attributes that can be applied over the model classes to define various behaviours.
 
-  Example : 
+  **Example : **
   public class Employee
   {
-  [Key] -- To Define Primary Key
+  **[Key] -- To Define Primary Key**
    public int EmployeeId {get;set;}
-   [Required] -- Marking the field as reuired
-   [MinLength(5)] -- Making the empname should be atleast 5 characters.
+   **[Required] -- Marking the field as reuired**
+   **[MinLength(5)] -- Making the empname should be atleast 5 characters.**
    public string? EmpName {get;set;}
   
   }
