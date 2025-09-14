@@ -22,7 +22,7 @@
 In case of Entity framework it is a class that is mapped to database table.
 
 **What are Dbset?**
-Dbset: Domain classes(Models) becomes entities when they are Included as Dbset.
+Dbset: Domain classes(Models) becomes entities when they are Included as Dbset. It represents and entity set in a database.
 For example : Dbset<Employee> Employees {get;set;};
               Dbset<Manager> Managers {get;set;};
 
