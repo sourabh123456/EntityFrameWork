@@ -60,6 +60,12 @@ Here you need to use Include keyword in a query and if further details or tables
  **Example : var employeedetailsresult = this.context.Employees.Include(emp=>emp.EmployeeDetails).ThenInclude(p=>p.Address).ToList(); //EagerLoadingDetails**
 
 
+**What is Explicit Loading? **
+
+**Explicit Loading ** : It is a technique related data is explicitiy loaded at later time
+ 
+
+
 
 
 
