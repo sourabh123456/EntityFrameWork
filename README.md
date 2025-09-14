@@ -112,6 +112,28 @@ Different ways of accessing lazy loading
   When you call the Savechanges method EF core examines the tracked entities and generates the necessary sql based on their current states.
 
   After calling the savechanges method the change tracker sets the entity state to unchanged as changes have been successfully persisted in the database.
+
+
+
+  **What is a trasaction in EF Core ? **
+
+  A transaction is a sequence of one or more opeartions that are executed as a single unit of work.
+
+  Example : For example update two tables like
+            1. update employee details   
+            2. update Manager details
+
+         #   if all the steps (1,2) are excuted sucessfully then we will **COMMIT** the transaction 
+         #  Else we need to **ROLLBACK** the transaction.
+
+         Steps : We need to Use the **DbContext.Database** API to implement the transaction.
+   **      Step 1 # We need to Begin a transaction
+
+         Step 2 # Perform the Db-operations.
+
+         Step 3 # We need to commit/ rollback the trasaction.
+   **      
+   
   
   
   
