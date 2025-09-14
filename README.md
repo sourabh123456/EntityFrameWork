@@ -81,6 +81,9 @@ Different ways of accessing lazy loading
 2. Lazy loading Without Proxies.
 
 
+   Entity Framework Core will by default enable lazy loading for the navigation properties those are marked as virtual.
+
+
 
 
  
