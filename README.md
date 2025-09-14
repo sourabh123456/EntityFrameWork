@@ -93,9 +93,13 @@ Different ways of accessing lazy loading
   public class Employee
   {
   **[Key] -- To Define Primary Key**
+  
    public int EmployeeId {get;set;}
+   
    **[Required] -- Marking the field as reuired**
+   
    **[MinLength(5)] -- Making the empname should be atleast 5 characters.**
+   
    public string? EmpName {get;set;}
   
   }
