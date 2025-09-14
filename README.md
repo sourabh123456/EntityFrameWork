@@ -86,6 +86,22 @@ Different ways of accessing lazy loading
   **Note Important :** Entity Framework Core will by default enable lazy loading for the navigation properties those are marked as virtual.
 
 
+  **What are Data Anotations ?**
+  **Data Anotations:** These are the attributes that can be applied over the model classes to define various behaviours.
+
+  Example : 
+  public class Employee
+  {
+  [Key] -- To Define Primary Key
+   public int EmployeeId {get;set;}
+   [Required] -- Marking the field as reuired
+   [MinLength(5)] -- Making the empname should be atleast 5 characters.
+   public string? EmpName {get;set;}
+  
+  }
+  
+
+
 
 
  
