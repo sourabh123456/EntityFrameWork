@@ -72,6 +72,13 @@ foreach (var emp in employeedetailsresult)
 return Ok(employeedetailsresult);
 
 **What is Lazy Loading ?**
+Lazy Loading :Relational data is loaded from the database when the navigation property is accessed.
+
+
+Different ways of accessing lazy loading 
+
+1. Lazy loading With Proxies
+2. Lazy loading Without Proxies.
 
 
 
