@@ -1,4 +1,9 @@
 # EntityFrameWork
+**** What is the Entity Framework Core?**
+
+**EF CORE :**Entity Framework Core is an ORM (Object relational mapping) framework which allows users to work with Databases using C#.
+
+
 **EF Core support different DB Engines**
 1. Sql server
 2. Ms Sql
@@ -8,4 +13,7 @@
 **Approaches to Work with Entity FrameWork**
 1. **Code First:** We can create the (domain) model classes first, then database from the model classes.
 2. **Database First:** We have database created already, then we can create domain model classed from that.
+
+**What is DBContext?**
+**DbContext: ** DbContext is a class that is used to interact with Database.
 
