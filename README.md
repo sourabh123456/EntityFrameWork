@@ -35,8 +35,19 @@ Migrations : Migrations is an entity framework feaure that provides a way to inc
 while preserving the data in the databse.
 
 **Migration Commands:**
-Add ----> Add-Migration "message"
-Update -----> Update-Migrations "message" . After running this command the database created/update in the database.
+**Add ---->** Add-Migration "message"
+**Update ----->** Update-Migrations "message" . After running this command the database created/update in the database.
+
+**Types of relations in Entities**
+**One-To-One** : In the context of EF core If **one entity is associated with at most one another entity**  then we call it as **one-one-relationship.**
+In case of database if each row in one table has related to one row in another table than that is know as  **one-one-relationship in database.**
+                                                                   
+**One-To-Many**  In context of db If each row of one table has multiple rows in another table, we call it as one to many relationship.
+**Many-To-Many** : Many-To-Many relationship is used when one entity type is related with any number of entity of same or another type. In case of db row from one table can have multiple matching rows in another table or vice versa. 
+
+**Primary Key** : By default in EFCore the column name Id or ClassNameId are treated as Primary Key.
+
+
 
 
 
