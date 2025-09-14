@@ -62,7 +62,20 @@ Here you need to use Include keyword in a query and if further details or tables
 
 **What is Explicit Loading? **
 
-**Explicit Loading ** : It is a technique related data is explicitiy loaded at later time
+**Explicit Loading ** : It is a technique related data is explicitiy loaded at later time.
+
+Example : var employeedetailsresult = this.context.Employees.ToList(); //EagerLoadingDetails
+foreach (var emp in employeedetailsresult)
+{
+    context.Entry(emp).Reference(x => x.EmployeeDetails).Load();
+}
+return Ok(employeedetailsresult);
+
+**What is Lazy Loading ?**
+
+
+
+
  
 
 
