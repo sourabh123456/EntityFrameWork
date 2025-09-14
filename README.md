@@ -47,6 +47,13 @@ In case of database if each row in one table has related to one row in another t
 
 **Primary Key** : By default in EFCore the column name Id or ClassNameId are treated as Primary Key.
 
+**Method Chaining ** : It involves invoking multiple methods on an object in a single statement by chaining the methods calls together.
+for example : 
+modelBuilder.Entity<EmployeeProject>()
+.HasOne(ep => ep.Project)
+.WithMany(ep => ep.EmployeeProject)
+.HasForeignKey(ep => ep.ProjectId);
+
 
 
 
