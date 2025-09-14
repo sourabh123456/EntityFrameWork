@@ -54,6 +54,13 @@ modelBuilder.Entity<EmployeeProject>()
 .WithMany(ep => ep.EmployeeProject)
 .HasForeignKey(ep => ep.ProjectId);
 
+**What is Eager Loading? **
+Eager Loading : Eager loading is a technique used to load related entities along with the main entity being queried in the single datanase call.
+Here you need to use Include keyword in a query and if further details or tables were needed then we use theninclude method.
+ **Example : var employeedetailsresult = this.context.Employees.Include(emp=>emp.EmployeeDetails).ThenInclude(p=>p.Address).ToList(); //EagerLoadingDetails**
+
+
+
 
 
 
